@@ -51,12 +51,13 @@ footer {
 	bottom: 0;
 	width: 100%;
 	text-align: center;
-	gap: 82px;
+	justify-content: center;
 	display: flex;
 	overflow: hidden;
 	border-top: 1px solid #FFF;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 	padding: 10px;
+	gap: 15%;
 	box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
 }
 footer button {
