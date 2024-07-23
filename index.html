@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/8aa17a250d.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="header">
+	<img src="https://i.ibb.co/qkq5xTm/icon.png" class="app-icon">
+	<h2>Yopsh !</h2>
+	<a href="#" class="arrow-up"><i class="fa-solid fa-cloud-arrow-up"></i></a>
+	<a href="#" class="bookmark"><i class="fa-solid fa-bookmark"></i></a>
+</div>
+<hr class="head-hr">
+
+<div id="div2" class="content-div">
+	<div class="header">
+		<img src="https://i.ibb.co/qkq5xTm/icon.png" class="app-icon">
+		<h2>Yopsh !</h2>
+	</div>
+	<hr class="head-hr">
+	<p>This is the content for div 2.</p>
+	<button onclick="closeDiv(2)">Close</button>
+</div>
+<div id="div3" class="content-div">
+	<div class="header">
+		<img src="https://i.ibb.co/qkq5xTm/icon.png" class="app-icon">
+		<h2>Yopsh !</h2>
+	</div>
+	<hr class="head-hr">
+	<p>This is the content for div 3.</p>
+	<button onclick="closeDiv(3)">Close</button>
+</div>
+<div id="blurBackground" class="blur-background"></div>
+<footer>
+    <button id="btnReload" class="active" onclick="reload()"><i class="fa-solid fa-house home-icon"></i></button>
+    <button id="btnGame" onclick="openDiv(2)"><i class="fa-solid fa-gamepad game-icon"></i></button>
+    <button id="btnFire" onclick="openDiv(3)"><i class="fa-solid fa-fire-flame-curved fire-icon"></i></button>
+</footer>
+<script src="script.js"></script>

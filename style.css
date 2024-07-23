@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+*{
+	overflow-x: hidden;
+}
+body{
+	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+	padding: 0;
+	margin: 0;
+}
+.header{
+	font-family: "Schoolbell", cursive;
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+.header h2{
+	color: #FFF;
+	font-size: 20px;
+}
+.app-icon{
+	margin-left: 10px;
+	width: 50px;
+	margin-top: 10px;
+	border-radius: 125px;
+}
+.content-div {
+	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+	display: none;
+	color: #FFF;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+.blur-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(5px);
+	display: none;
+	z-index: 5;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	gap: 82px;
+	display: flex;
+	overflow: hidden;
+	border-top: 1px solid #FFF;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	padding: 10px;
+	box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+}
+footer button {
+	padding: 10px 20px;
+	color: #FFF;
+	overflow: hidden;
+	font-size: 23px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+i{
+	overflow: hidden;
+}
+button {
+    color: white;
+}
+
+button.active {
+    color: #77adff;
+}
+a{
+	color: #FFF;
+	overflow: hidden;
+}
+.arrow-up{
+	margin-left: 160px;
+}
+.bookmark{
+	margin-left: 25px;
+}
+.header a{
+	font-size: 23px;
+}
