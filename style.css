@@ -1,40 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
-*{
-	overflow-x: hidden;
+* {
+    overflow-x: hidden;
 }
-body{
-	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-	padding: 0;
-	margin: 0;
+body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 0;
+    margin: 0;
 }
-.header{
-	font-family: "Schoolbell", cursive;
-	display: flex;
-	width: 100%;
-	align-items: center;
+.header {
+    font-family: "Schoolbell", cursive;
+    display: flex;
+    width: 100%;
+    align-items: center;
 }
-.header h2{
-	color: #FFF;
-	font-size: 20px;
+.header h2 {
+    color: #FFF;
+    font-size: 20px;
 }
-.app-icon{
-	margin-left: 10px;
-	width: 50px;
-	margin-top: 10px;
-	border-radius: 125px;
+.app-icon {
+    margin-left: 10px;
+    width: 50px;
+    margin-top: 10px;
+    border-radius: 125px;
 }
 .content-div {
-	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-	display: none;
-	color: #FFF;
-	position: fixed;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 20px;
-	width: 100%;
-	height: 80%;
-	z-index: 10;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    display: none;
+    color: #FFF;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 100%;
+    height: 80%;
+    z-index: 10;
+    opacity: 0;
+}
+.content{
+    animation: fadeIn 1s forwards;
+    margin-left: 14px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(0.5%, 60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0.5%, 0.5%);
+    }
 }
 footer {
     position: fixed;
@@ -47,7 +62,6 @@ footer {
     justify-content: space-around;
     padding: 10px 0;
 }
-
 footer button {
     background-color: transparent;
     border: none;
@@ -62,50 +76,43 @@ footer button {
     justify-content: center;
     align-items: center;
 }
-
 footer button:hover {
     background-color: #e9ecef;
 }
-
 footer button.active {
     background-color: #007bff;
     color: white;
 }
-
 footer button.active:hover {
     background-color: #0056b3;
 }
-
 .home-icon {
     color: #28a745;
     overflow: hidden;
 }
-
 .game-icon {
     color: #ffc107;
     overflow: hidden;
 }
-
 .fire-icon {
     color: #dc3545;
     overflow: hidden;
 }
-
 footer button.active .home-icon,
 footer button.active .game-icon,
 footer button.active .fire-icon {
     color: white;
 }
-a{
-	color: #FFF;
-	overflow: hidden;
+a {
+    color: #FFF;
+    overflow: hidden;
 }
-.arrow-up{
-	margin-left: 160px;
+.arrow-up {
+    margin-left: 160px;
 }
-.bookmark{
-	margin-left: 25px;
+.bookmark {
+    margin-left: 25px;
 }
-.header a{
-	font-size: 23px;
+.header a {
+    font-size: 23px;
 }
