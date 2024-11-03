@@ -1,0 +1,79 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/8aa17a250d.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="header">
+    <img src="https://i.ibb.co/vckRpWn/icon.png" class="app-icon">
+</div>
+<hr class="head-hr">
+<div id="data-container">
+    <div class="loading">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+</div>
+<div id="custom-alert" style="display: none;">
+    <p>Did You Really Want to remove?</p>
+    <button id="yes-btn">Yes</button>
+    <button id="abort-btn">Abort</button>
+</div>
+<script src="show_meme.js"></script>
+<style>
+    .time-class {
+        font-size: 20px;
+        color: gray;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: -4px;
+        margin-left: 10px;
+    }
+    #data-container {
+        color: #FFF;
+        margin-left: 10px;
+        margin-top: 1px;
+    }
+    .loading {
+      font-size: 24px;
+      text-align: center;
+      margin-top: 80%;
+    }
+    #custom-alert {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      border-radius: 10px;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 1px solid black;
+      text-align: center;
+    }
+    .remove-btn {
+      background-color: #ff4d4d;
+      color: white;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    #abort-btn {
+      background: lightgreen;
+      padding: 5px;
+      margin-left: 10px;
+      color: #333;
+      border: none;
+      width: 70px;
+      border-radius: 4px;
+    }
+    #yes-btn {
+      background: orangered;
+      padding: 5px;
+      margin-left: 10px;
+      color: #333;
+      border: none;
+      width: 50px;
+      border-radius: 4px;
+    }
+</style>

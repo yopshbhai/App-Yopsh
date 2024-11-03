@@ -1,0 +1,58 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/8aa17a250d.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="header">
+    <img src="https://i.ibb.co/vckRpWn/icon.png" class="app-icon">
+</div>
+<hr class="head-hr">
+<div id="loader">
+    <span id="dots" class="dot"></span>
+    <span id="dots" class="dot"></span>
+    <span id="dots" class="dot"></span>
+</div>
+  <form id="newsForm">
+    <label for="username" style="display:none;">Username:</label>
+    <input type="text" id="username" name="username" readonly style="display: none;">
+
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="news">News:</label>
+    <textarea id="news" name="news" rows="4" required></textarea>
+
+    <label for="memeImage">Upload Image:</label>
+    <input type="file" id="memeImage" name="memeImage" accept="image/*" required>
+
+    <button type="submit" class="submit-btn-news">Upload</button>
+  </form>
+  <div id="message" class="message"></div>
+  <script src="upload_news.js"></script>
+  <style>
+    body{
+        background: rgba(0, 0, 0, 0.05);
+    }
+    input[type='text']{
+    background: #FFF;
+    color: #000;
+    font-weight: 300;
+    margin-left: -4px;
+    height: 38px;
+    padding-left: 12px;
+    margin-top: 4px;
+    border-radius: 10px;
+    }
+    #news{
+    background: #FFF;
+    color: #000;
+    font-weight: 300;
+    margin-left: -4px;
+    height: 150px;
+    padding-left: 12px;
+    margin-top: 4px;
+    border-radius: 10px;
+    }
+    #memeImage{
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+  </style>

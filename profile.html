@@ -1,0 +1,50 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/8aa17a250d.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="header">
+  <img src="https://i.ibb.co/vckRpWn/icon.png" class="app-icon">
+</div>
+<hr class="head-hr">
+<div id="content">
+    <div id="loginForm">
+      <h2>Sign In To YOPSH!</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Sign In</button>
+      <h3 class="text-h3">Don't Have Account <a href="signup.html" class="click-here">Click Here</a></h3>
+    </div>
+    <div id="userDetails">
+      <img id="userImage" src="" alt="User Image">
+      <span id="userName" class="user-name"></span>
+      <div class="user-info">
+        <p><strong>Email:</strong> <span id="userEmail"></span></p>
+        <p><strong>Age:</strong> <span id="userAge"></span></p>
+        <p><strong>Mobile Number:</strong> <span id="userMobile"></span></p>
+        <p><strong>Gender:</strong> <span id="userGender"></span></p>
+        <button id="logoutButton" onclick="logout()">Logout</button>
+      </div>
+      <div class="nav-footer-btn">
+      <a href="show_news.html" class="show_news"><span class="material-symbols-outlined" id="news_icon">breaking_news_alt_1</span></a>
+      <a href="show_meme.html" class="show_news"><span class="material-symbols-outlined" id="news_icon">psychology</span></a>
+      <a href="show_news.html" class="show_news"><span class="material-symbols-outlined" id="news_icon">breaking_news_alt_1</span></a>
+    </div>
+    </div>
+  </div>
+  <div id="loader">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <div id="customAlert">
+    <h2>Yopsh Says That!</h2>
+    <p id="alertMessage"></p>
+    <button onclick="closeCustomAlert()">OK</button>
+  </div>
+  <script src="profile.js"></script>
+  <style>
+    .app-icon{
+      margin-left: 20px;
+    }
+ </style>

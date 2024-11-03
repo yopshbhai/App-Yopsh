@@ -1,0 +1,49 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/8aa17a250d.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="header">
+    <img src="https://i.ibb.co/vckRpWn/icon.png" class="app-icon">
+</div>
+<hr class="head-hr">
+<div id="loader" style="top: 55%;">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+  <form id="memeForm" class="form-group">
+    <div id="newsForm">
+    <label for="memeTitle" class="title">Meme Title:</label>
+    <input type="text" id="memeTitle" name="memeTitle" required>
+
+    <label for="memeImage">Upload Image:</label>
+    <input type="file" id="memeImage" name="memeImage" accept="image/*" required>
+
+    <button type="submit" class="submit-btn-news">Upload</button>
+  </form>
+  <div id="message" class="message"></div>
+</div>
+
+<script src="meme_upload.js"></script>
+<style>
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #000;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.custom-alert-content {
+    text-align: center;
+}
+.loading-pro {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+</style>

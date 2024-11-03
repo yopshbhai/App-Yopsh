@@ -1,0 +1,82 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="header">
+  <img src="https://i.ibb.co/vckRpWn/icon.png" class="app-icon">
+</div>
+<hr class="head-hr">
+<div class="body-whole">
+<div id="signupPage">
+    <div id="signupForm">
+        <h2>Sign up to yopsh!</h2>
+        <form>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="button" id="getOtpButton" onclick="validateEmail()" class="sign-btn">Get OTP</button>
+            <div id="signupError" class="error"></div>
+        </form>
+    </div>
+    <div id="otpForm" style="display:none;">
+        <form>
+            <input type="text" id="otp" placeholder="Enter OTP" required style="margin-bottom: -5px;"><br><br>
+            <button type="button" onclick="verifyOTP()" class="sign-btn">Next</button>
+            <div id="otpError" class="error"></div>
+        </form>
+    </div>
+    <h3 class="text-h3">Already Have Account <a href="profile.html" class="click-here">Click Here</a></h3>
+</div>
+<div id="additionalDetailsPage" style="display:none;">
+    <div id="additionalDetailsForm">
+        <h2 style="margin-left: -24%; margin-bottom: 10px;">Additional Details</h2>
+        <form>
+            <input type="text" id="name" placeholder="Name" required><br>
+            <input type="text" id="username" placeholder="Username" required><br>
+            <label for="birthdate" class="birthday-text">Birthdate:</label><br>
+            <input type="date" id="birthdate" required><br>
+            <select id="countryCode" style="width: 100%; outline: none;">
+                <option value="1">USA (+1)</option>
+                <option value="91">India (+91)</option>
+                <option value="92">Pakistan (+92)</option>
+                <option value="977">Nepal (+977)</option>
+            </select>
+            <input type="text" id="mobile" placeholder="Mobile Number" required><br>
+            <div class="gender">
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="Male"> Male
+                <input type="radio" id="female" name="gender" value="Female"> Female
+                <input type="radio" id="other" name="gender" value="Other"> Other<br>
+            </div>
+            <input type="password" id="password" placeholder="Password" required>
+            <div class="show-password">
+            <input type="checkbox" onclick="showPassword()"> <p style="color: #000; margin-left: 10px;">Show Password</p></div><br>
+            <button type="button" onclick="goToImageUpload()" class="sign-btn">Next</button>
+            <div id="additionalDetailsError" class="error"></div>
+        </form>
+    </div>
+    <div id="imageUploadForm" style="display:none;">
+        <h2 style="margin-left: -36%; margin-bottom: 10px;">Profile Picture</h2>
+        <div class="image-upload-container">
+            <label for="imageUpload" class="image-upload-label">
+                <span class="image-upload-text">Choose an image</span>
+                <input type="file" id="imageUpload" class="image-upload-input" accept="image/*" required>
+            </label>
+            <img id="imagePreview" class="image-preview" alt="Image preview" style="border-radius: 125px;">
+        </div><br>
+        <button type="button" onclick="saveAdditionalDetails()" class="sign-btn">Submit</button>
+        <div id="imageUploadError" class="error"></div>
+    </div>
+</div>
+<div id="confirmationPage" style="display:none;">
+    <h2>Your registration has been successfully completed.</h2>
+</div>
+</div>
+<script src="signup.js"></script>
+<style>
+    .app-icon{
+        margin-left: 20px;
+    }
+    .text-h3{
+        margin-top: -10px;
+    }
+</style>

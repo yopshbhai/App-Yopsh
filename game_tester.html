@@ -1,0 +1,89 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/8aa17a250d.js" crossorigin="anonymous"></script>
+<style>
+	.gamer-body h3 {
+		font-size: 20px;
+		color: #FFF;
+		margin-left: 20px;
+		font-family: "Tajawal", sans-serif;
+		font-weight: 400;
+	}
+	.gamer-body button {
+		margin-left: 20px;
+		background: #e94560;
+		color: #FFF;
+		padding: 8px;
+		border: none;
+		border-radius: 8px;
+		margin-top: 4px;
+	}
+	.gamer-body {
+		margin-top: 60%;
+		background: rgba(255, 255, 255, 0.1);
+		height: 15%;
+		border-radius: 8px;
+		width: 53%;
+		margin-left: 21%;
+	}
+	#loaderGam, #loaderGamDev {
+		display: none;
+		margin-top: 80%;
+		text-align: center;
+	}
+	.dot {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin: 5px;
+		background-color: white;
+		border-radius: 50%;
+	}
+	.content {
+		display: none;
+	}
+	.contact-btn{
+		margin-top: 20px;
+		padding: 8px;
+		border: none;
+		width: 95%;
+		color: #FFF;
+		background: #e94560;
+		border-radius: 4px;
+		margin-bottom: 15px;
+	}
+</style>
+
+<link rel="stylesheet" href="style.css">
+<div class="header">
+	<img src="https://i.ibb.co/vckRpWn/icon.png" class="app-icon">
+	<a href="gamer_upload.html" class="user"><i class="fa-solid fa-user-secret"></i></a>
+</div>
+
+<hr class="head-hr">
+<div class="gamer-body">
+	<h3>Are You A:</h3>
+	<button id="gamerBtn" onclick="showContent('gamer')">Gamer</button>
+	<button id="developerBtn" onclick="showContent('developer')">Developer</button>
+</div>
+<div id="gamer" class="content">
+	<div id="loaderGam">
+		<div class="spinner">
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+	</div>
+	<div id="content"></div>
+</div>
+<div id="developer" class="content">
+	<div id="loaderGamDev">
+		<div class="spinner">
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+	</div>
+	<div id="devcontent"></div>
+</div>
+<script src="game_tester.js"></script>

@@ -1,0 +1,92 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/8aa17a250d.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="header">
+    <img src="https://i.ibb.co/vckRpWn/icon.png" class="app-icon">
+    <button class="arrow-up"><a href="review_upload.html"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="M167-120q-21 5-36.5-10.5T120-167l40-191 198 198-191 40Zm191-40L160-358l458-458q23-23 57-23t57 23l84 84q23 23 23 57t-23 57L358-160Zm317-600L261-346l85 85 414-414-85-85Z"/></svg></a></button>
+</div>
+<hr class="head-hr">
+<div class="loader" id="loader">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<div id="questionsContainer"></div>
+<div id="alertMessage"></div>
+<script src="review.js"></script>
+<style>
+    .loader{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+    }
+    .username-text,.time-stamp,.question{
+        font-size: 20px;
+    }
+    .username-text,.question{
+        margin-top: -18px;
+    }
+    .comments{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .comments-hero{
+        margin-top: -26px;
+        margin-left: 20px;
+        font-size: 17px;
+        height: auto;
+        margin-bottom: 15px;
+        max-height: 150px;
+        overflow-y: scroll;
+    }
+    .publish-btn, .close-btn{
+        margin-left: 10px;
+        border: none;
+        margin-bottom: 12px;
+        margin-top: -3px;
+        background: transparent;
+    }
+    .close-btn{
+        margin-left: 68%;
+    }
+    .head-r{
+        margin-top: 20px;
+        width: 93%;
+        margin-left: -9px;
+    }
+    .commentBox{
+        display: none;
+        border-radius: 20px;
+        margin-top: 13px;
+        width: 93%;
+        background: #000;
+        border-radius: 10px;
+    }
+    #alertMessage {
+        width: 80%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 4px;
+        margin-left: 5%;
+    }
+    #alertMessage.success {
+        background-color: #dff0d8;
+        color: #3c763d;
+        border-color: #d6e9c6;
+    }
+    #alertMessage.error {
+        background-color: #f2dede;
+        color: #a94442;
+        border-color: #ebccd1;
+    }
+    #questionsContainer{
+        margin-left: 20px;
+    }
+    .header a{
+        margin-left: 30px;
+    }
+    .app-icon{
+        margin-left: 5%;
+    }
+</style>
